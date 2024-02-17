@@ -177,6 +177,9 @@ Schemantic elements
 7) audio 
 8) image 
 9) article - to add division 
+10)section
+11) details
+12)summary 
  
 
 storages
@@ -237,7 +240,8 @@ API
 
 				used to remove the the based on the "key"
 
-
+ 
+		
 	
 
  
