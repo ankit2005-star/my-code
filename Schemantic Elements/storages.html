@@ -32,9 +32,7 @@
         article{
             margin-bottom: 1rem;
         }
-        p{
-              
-        }
+        
         label{
             margin: 0.5rem 0;
              
@@ -42,7 +40,7 @@
             font-family: comic Sans MS;
             background-color: rgba(102, 109, 37, 0.98);
             width:  25%;
-            text-align: center;
+          
             border-radius: 5px;
             color: rgb(0, 0, 0);
             padding: 3px;
@@ -123,8 +121,8 @@
     function read(){
     let str = window.localStorage.getItem("login_details");
     let obj1 = JSON.parse( str);
-      document.getElementById("result1").innerHTML= obj1.email;
-      document.getElementById("result2").innerHTML = obj1.password;
+      document.getElementById("result1").innerHTML= "Id : " + obj1.email;
+      document.getElementById("result2").innerHTML = "Password : " + obj1.password;
 
     }
 
