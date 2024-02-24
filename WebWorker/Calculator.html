@@ -1,0 +1,14 @@
+ <script>
+    if(window.Worker){
+        let addThread = new Worker("add.js"); 
+        addThread.postMessage({arg1:10 ,arg2:20});
+        addThread.onmessage = function(e){
+            const {data} = e;
+            console.log(data.addresult);
+        }
+       
+    }
+    else{
+        console.log("your Browser not supporting Web worker")
+    }
+ </script>
