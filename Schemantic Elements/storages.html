@@ -116,10 +116,13 @@
             "email":document.getElementById("storageemail").value,
             "password":document.getElementById("storagepassword").value
         };
-        window.localStorage.setItem("login_details",JSON.stringify(obj));
+       // window.localStorage.setItem("login_details",JSON.stringify(obj));
+       window.sessionStorage.setItem("login_details",JSON.stringify(obj));
     }
     function read(){
-    let str = window.localStorage.getItem("login_details");
+   // let str = window.localStorage.getItem("login_details");
+
+   let str = window.sessionStorage.getItem(login_details);
     let obj1 = JSON.parse( str);
       document.getElementById("result1").innerHTML= "Id : " + obj1.email;
       document.getElementById("result2").innerHTML = "Password : " + obj1.password;
@@ -128,8 +131,9 @@
 
     function remove(){
       //deleting item from local storage
-      window.localStorage.removeItem("login_details");
-
+     //  window.localStorage.removeItem("login_details");
+        
+     windows.sessionStorage.removeItem("login_details");
       //deleting item at id/login screen 
       document.getElementById("result1" ).innerHTML="";
       document.getElementById("result2" ).innerHTML="";
