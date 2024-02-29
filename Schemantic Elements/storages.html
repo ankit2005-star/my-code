@@ -87,12 +87,12 @@
         <legend>Storages API</legend>
         <article>
             <label>Email</label>
-            <input type="email"  id="storageemail">
+             <input type="email"  id="storageemail">
         </article>
          
         <article>
             <label>Password</label>
-            <input type="password" id="storagepassword">
+             <input type="password" id="storagepassword">
         </article>
         
         <article>
@@ -122,7 +122,7 @@
     function read(){
    // let str = window.localStorage.getItem("login_details");
 
-   let str = window.sessionStorage.getItem(login_details);
+   let str = window.sessionStorage.getItem("login_details");
     let obj1 = JSON.parse( str);
       document.getElementById("result1").innerHTML= "Id : " + obj1.email;
       document.getElementById("result2").innerHTML = "Password : " + obj1.password;
@@ -133,7 +133,7 @@
       //deleting item from local storage
      //  window.localStorage.removeItem("login_details");
         
-     windows.sessionStorage.removeItem("login_details");
+    // windows.sessionStorage.removeItem("login_details");
       //deleting item at id/login screen 
       document.getElementById("result1" ).innerHTML="";
       document.getElementById("result2" ).innerHTML="";
