@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../../../Users/user/Desktop/shivam"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "shivam",
+    "liveServer.settings.port": 5501
+  }
+}

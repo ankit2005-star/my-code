@@ -1,0 +1,15 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>array operation </title>
+    </head>
+    <body>
+
+    </body>
+</html>
+<script>
+    if(window.Worker){
+        let thread1 = new Worker("reversearray.js");
+        thread1.postMessage("helloworld")
+    }
+</script>
